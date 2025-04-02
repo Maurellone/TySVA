@@ -1,0 +1,6 @@
+.mypy_cache/
+qdrant/
+.env
+scripts/.env
+scripts/__pycache__/
+typescript-assistant-voice.code-workspace

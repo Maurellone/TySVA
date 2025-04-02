@@ -1,0 +1,36 @@
+name: typescript-assistant-voice
+
+services:
+  mcp:
+    build:
+      context: ./docker/server/
+      dockerfile: Dockerfile
+    ports:
+      - 8000:8000
+    secrets:
+      - linkup_key
+      - groq_key
+  vector_db:
+    image: qdrant/qdrant:latest
+    ports:
+      - 6333:6333
+      - 6334:6334
+    volumes:
+      - ./qdrant/storage:/qdrant/storage
+  app:
+    build:
+      context: ./docker/app/
+      dockerfile: Dockerfile
+    ports:
+      - 7999:7999
+    secrets:
+      - groq_key
+      - elevenlabs_key
+
+secrets:
+  groq_key:
+    environment: groq_api_key
+  elevenlabs_key:
+    environment: elevenlabs_api_key
+  linkup_key:
+    environment: linkup_api_key

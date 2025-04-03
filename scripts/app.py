@@ -92,9 +92,9 @@ def bot(history: list, voice_enabled: bool):
         history.append({"role": "assistant", "content": f"<details>\n\t<summary><b>Agentic Process</b></summary>\n\n{process}\n\n</details>\n\n{response}"})
     return history
 
-with gr.Blocks() as demo:
-    chatbot = gr.Chatbot(elem_id="chatbot", bubble_full_width=False, type="messages")
-
+with gr.Blocks(theme=gr.themes.Ocean(), title="TySVA") as demo:
+    title = gr.HTML("<h1 align='center'>TySVA</h1>\n<h2 align='center'>Learn TypeScript chatting effortlessly with AI</h2>")
+    chatbot = gr.Chatbot(elem_id="chatbot", bubble_full_width=False, type="messages", min_height=700, min_width=700, label="TySVA", show_copy_all_button=True)
     chat_input = gr.MultimodalTextbox(
         interactive=True,
         placeholder="Enter message or say something...",

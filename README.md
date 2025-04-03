@@ -121,6 +121,8 @@ You will see the application running on http://localhost:7999/app and you will b
 
 ## Workflow
 
+![workflow](workflow.png)
+
 The workflow is very simple:
 
 - When you submit a request, if is audio, it gets transcribed and then submitted to the agent workflow as a starting prompt, whereas if it is textual it will be submitted directly to the agent workflow

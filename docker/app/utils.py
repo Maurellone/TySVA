@@ -36,7 +36,7 @@ class Synthesizer:
             json_res = json.loads(text)
             return json_res["process_synthesis"], json_res["response_synthesis"]
     async def agenerate(self, agentic_process: str, final_response: str):
-        messages = [ChatMessage.from_str(role="system", content="You are an AI assistant that performs summarization of text contents regarding AI agentic processes and response, for people who are not able to read. Keep in mind, then, that you summarization must be suitable for a spoken conversation."), ChatMessage.from_str(role="assistant", content=agentic_process), ChatMessage.from_str(role="assistant", content=final_response), ChatMessage.from_str(role="user", content="Could please summarize your agentic process (the first message you sent me) and the final response (second message)?")]
+        messages = [ChatMessage.from_str(role="system", content="You are an AI assistant that performs summarization of text contents regarding AI agentic processes and response, for people who are not able to read. Keep in mind, then, that you summarization must be suitable for a spoken conversation. Your only focus is providing summaries of what the user tells you to summarize."), ChatMessage.from_str(role="assistant", content=agentic_process), ChatMessage.from_str(role="assistant", content=final_response), ChatMessage.from_str(role="user", content="Could please summarize your agentic process (the first message you sent me) and the final response (second message)?")]
         response = await self.llm.achat(messages)
         text = response.message.blocks[0].text
         json_res = json.loads(text)

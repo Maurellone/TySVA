@@ -3,4 +3,5 @@ qdrant/
 .env
 scripts/.env
 scripts/__pycache__/
+scripts/*.mp3
 typescript-assistant-voice.code-workspace

